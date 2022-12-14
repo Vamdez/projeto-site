@@ -3,41 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site teste</title>
     <link rel="stylesheet" type="text/css" href="estilos/style.css" />
-    <script src="./first_js.js"></script>
+    <script src="./js/first_js.js"></script>
 </head>
 <body>
     <main>
-        <div class = "header">
-            Calculadora
-        </div>
-        <div class = "visor">
-            <input type="text" class="conta">
-        </div>
+        <div class="header">
+        <p class="texto">Calculadora</p>
+    </div>
         <div class = "digits">
-            <button class = "btn" id = "um">1</button>
-            <button class = "btn" id = "dois">2</button>
-            <button class = "btn" id = "tres">3</button>
-            <button class = "operador" id = "mais">+</button>
-            <br>
-            <button class = "btn" id = "quatro">4</button>
-            <button class = "btn" id = "cinco">5</button>
-            <button class = "btn" id = "seis">6</button>
-            <button class = "operador" id = "menos">-</button>
-            <br>
-            <button class = "btn" id = "sete">7</button>
-            <button class = "btn" id = "oito">8</button>
-            <button class = "btn" id = "nove">9</button>
-            <button class = "operador" id = "multiplicar">x</button>
-            <br>
-            <button class = "zero">0</button>
-            <button class = "operador" id = "dividir">/</button>      
-        </div>
-        <div class="footer">
-            <input type="submit" class="enviar" value="Resposta">
-        </div>
+            <input type="text" class="conta">
+            <input type="button" value= 1 class="btn" onclick="trocacor(this.value)">
+            <input type="button" value= 2 class="btn" onclick="trocacor(this.value)">
+            <input type="button" value= 3 class="btn" onclick="trocacor(this.value)">
+            <input type="button" value="+" class="btn" onclick="trocacor(this.value)">
+            <input type="button" value= 4 class="btn" onclick="trocacor(this.value)">
+            <input type="button" value= 5 class="btn" onclick="trocacor(this.value)">
+            <input type="button" value= 6 class="btn" onclick="trocacor(this.value)">
+            <input type="button" value="-" class="btn" onclick="trocacor(this.value)">
+            <input type="button" value="7" class="btn" onclick="trocacor(this.value)">
+            <input type="button" value="8" class="btn" onclick="trocacor(this.value)">
+            <input type="button" value="9" class="btn" onclick="trocacor(this.value)">
+            <input type="button" value="x" class="btn" onclick="trocacor(this.value)">
+            <input type="button" value="0" class="zero" onclick="trocacor(this.value)">
+            <input type="button" value="/" class="btn" onclick="trocacor(this.value)">      
+            <input type="submit" class="enviar" value="Resposta" onclick="resultadoConta()">
+    </div>
     </main>
 </body>
 

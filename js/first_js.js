@@ -7,44 +7,8 @@ function trocacor(letra){
 }
 
 function resultadoConta(){
-    const conta = document.querySelector(".conta").value;
-    let resultadoFinal = fazendoConta(conta);
-    document.querySelector(".conta").value = resultadoFinal;
-}
-
-function fazendoConta(texto){
-    let total = 0;
-    let number='';
-    let number2='';
-    let operator;
-    for(let itens of texto){
-        if(isNaN(itens) === false){
-            number+=itens;
-        }
-        else if(operator === undefined){
-            operator=itens;
-            number2 = Number(number);
-            number = '';
-        }
-        }
-    number = Number(number);
-
-    console.log(number)
-    console.log(number2)
-    console.log(operator)
-    switch(operator){
-        case "+":
-            total = number + number2;
-            break
-        case "-":
-            total = number2 - number;
-            break
-        case "x":
-            total = number * number2;
-            break
-        case "/":
-            total = number2 / number;
-            break
-        }
-    return total
+    var conta = document.querySelector(".conta").value;
+    conta = conta.replace("x", "*");
+    console.log(conta)
+    document.querySelector(".conta").value = eval(conta);
 }
